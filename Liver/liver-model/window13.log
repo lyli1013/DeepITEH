@@ -1,0 +1,974 @@
+nohup: ignoring input
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Using TensorFlow backend.
+样本个数 2537
+样本个数 5074
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/keras/initializers.py:119: calling RandomUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:Entity <bound method TokenEmbedding.call of <keras_bert.layers.embedding.TokenEmbedding object at 0x7ff3f26bb550>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method TokenEmbedding.call of <keras_bert.layers.embedding.TokenEmbedding object at 0x7ff3f26bb550>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method PositionEmbedding.call of <keras_pos_embd.pos_embd.PositionEmbedding object at 0x7ff44877e290>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method PositionEmbedding.call of <keras_pos_embd.pos_embd.PositionEmbedding object at 0x7ff44877e290>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4484eedd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4484eedd0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1288: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f2673e50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f2673e50>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4484ee850>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4484ee850>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f26730d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f26730d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f2673f50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f2673f50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4485c8f50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4485c8f50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f23e22d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f23e22d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff450aa9a10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff450aa9a10>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4485e56d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4485e56d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f23e2790>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f23e2790>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f2300890>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f2300890>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f20bfed0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3f20bfed0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3f211bfd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3f211bfd0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f21b7c90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f21b7c90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f207c5d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f207c5d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f22e7650>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f22e7650>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1d5b5d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1d5b5d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3e1da2fd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3e1da2fd0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e1e47950>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e1e47950>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f2106dd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3f2106dd0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e1df1750>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e1df1750>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1dcd290>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1dcd290>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3e1b11bd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3e1b11bd0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e198b390>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e198b390>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e1b743d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e1b743d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e182fa10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3e182fa10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1827890>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1827890>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d96e0d10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d96e0d10>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d9629090>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d9629090>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e19c6190>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e19c6190>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d9753e10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d9753e10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e19d2a90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e19d2a90>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d9349f10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d9349f10>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d94c3e10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d94c3e10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e19d2910>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e19d2910>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d96791d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d96791d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1827490>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3e1827490>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d901b490>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d901b490>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0ee59d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0ee59d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e1827610>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3e1827610>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d932ea10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d932ea10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3d9194050>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3d9194050>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d8fe3050>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3d8fe3050>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0c036d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0c036d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3d90b0690>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3d90b0690>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0b7aad0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0b7aad0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c0be4410>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c0be4410>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c0d59e50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c0d59e50>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c090aa50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c090aa50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c0aee8d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c0aee8d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c09e5bd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c09e5bd0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c07abd90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c07abd90>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c09db910>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c09db910>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c05bce90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c05bce90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c07aba50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c07aba50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0560790>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c0560790>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c050c750>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff3c050c750>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c0818990>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff3c0818990>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c06f1a10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c06f1a10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c04a2f10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff3c04a2f10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c05a7850>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c05a7850>>: AttributeError: module 'gast' has no attribute 'Str'
+2022-11-18 22:15:05.125904: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2022-11-18 22:15:05.226479: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2022-11-18 22:15:05.308403: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c3e3815310 executing computations on platform Host. Devices:
+2022-11-18 22:15:05.308495: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2022-11-18 22:15:06.126696: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:66: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:148: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3733: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+window13.py:145: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=[<tf.Tenso..., outputs=[<tf.Tenso...)`
+  model = Model(input=[inputs_seq1], output=[seq_dense])
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/optimizers.py:793: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3657: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Fitting first model...
+Train on 4566 samples, validate on 508 samples
+Epoch 1/10
+
+  64/4566 [..............................] - ETA: 1:09:57 - loss: 0.7263 - acc: 0.5156
+ 128/4566 [..............................] - ETA: 47:37 - loss: 0.7442 - acc: 0.5000  
+ 192/4566 [>.............................] - ETA: 40:06 - loss: 0.7277 - acc: 0.5052
+ 256/4566 [>.............................] - ETA: 35:14 - loss: 0.7370 - acc: 0.4883
+ 320/4566 [=>............................] - ETA: 30:42 - loss: 0.7434 - acc: 0.4875
+ 384/4566 [=>............................] - ETA: 27:45 - loss: 0.7469 - acc: 0.4844
+ 448/4566 [=>............................] - ETA: 26:07 - loss: 0.7405 - acc: 0.4888
+ 512/4566 [==>...........................] - ETA: 24:09 - loss: 0.7374 - acc: 0.5000
+ 576/4566 [==>...........................] - ETA: 23:03 - loss: 0.7405 - acc: 0.4965
+ 640/4566 [===>..........................] - ETA: 22:33 - loss: 0.7472 - acc: 0.4813
+ 704/4566 [===>..........................] - ETA: 21:52 - loss: 0.7486 - acc: 0.4858
+ 768/4566 [====>.........................] - ETA: 21:10 - loss: 0.7477 - acc: 0.4883
+ 832/4566 [====>.........................] - ETA: 20:24 - loss: 0.7489 - acc: 0.4832
+ 896/4566 [====>.........................] - ETA: 19:33 - loss: 0.7464 - acc: 0.4922
+ 960/4566 [=====>........................] - ETA: 18:33 - loss: 0.7451 - acc: 0.4948
+1024/4566 [=====>........................] - ETA: 17:38 - loss: 0.7414 - acc: 0.4990
+1088/4566 [======>.......................] - ETA: 16:50 - loss: 0.7426 - acc: 0.4972
+1152/4566 [======>.......................] - ETA: 16:07 - loss: 0.7409 - acc: 0.5009
+1216/4566 [======>.......................] - ETA: 15:26 - loss: 0.7401 - acc: 0.4992
+1280/4566 [=======>......................] - ETA: 14:50 - loss: 0.7362 - acc: 0.5023
+1344/4566 [=======>......................] - ETA: 14:15 - loss: 0.7351 - acc: 0.5015
+1408/4566 [========>.....................] - ETA: 13:43 - loss: 0.7358 - acc: 0.4986
+1472/4566 [========>.....................] - ETA: 13:17 - loss: 0.7332 - acc: 0.5000
+1536/4566 [=========>....................] - ETA: 12:49 - loss: 0.7325 - acc: 0.5013
+1600/4566 [=========>....................] - ETA: 12:27 - loss: 0.7326 - acc: 0.5044
+1664/4566 [=========>....................] - ETA: 12:04 - loss: 0.7312 - acc: 0.5066
+1728/4566 [==========>...................] - ETA: 11:48 - loss: 0.7303 - acc: 0.5081
+1792/4566 [==========>...................] - ETA: 11:33 - loss: 0.7309 - acc: 0.5089
+1856/4566 [===========>..................] - ETA: 11:17 - loss: 0.7307 - acc: 0.5097
+1920/4566 [===========>..................] - ETA: 11:01 - loss: 0.7305 - acc: 0.5104
+1984/4566 [============>.................] - ETA: 10:45 - loss: 0.7291 - acc: 0.5136
+2048/4566 [============>.................] - ETA: 10:28 - loss: 0.7268 - acc: 0.5166
+2112/4566 [============>.................] - ETA: 10:07 - loss: 0.7275 - acc: 0.5161
+2176/4566 [=============>................] - ETA: 9:49 - loss: 0.7263 - acc: 0.5179 
+2240/4566 [=============>................] - ETA: 9:27 - loss: 0.7259 - acc: 0.5201
+2304/4566 [==============>...............] - ETA: 9:05 - loss: 0.7261 - acc: 0.5204
+2368/4566 [==============>...............] - ETA: 8:44 - loss: 0.7251 - acc: 0.5203
+2432/4566 [==============>...............] - ETA: 8:23 - loss: 0.7253 - acc: 0.5201
+2496/4566 [===============>..............] - ETA: 8:03 - loss: 0.7249 - acc: 0.5204
+2560/4566 [===============>..............] - ETA: 7:43 - loss: 0.7243 - acc: 0.5215
+2624/4566 [================>.............] - ETA: 7:24 - loss: 0.7247 - acc: 0.5213
+2688/4566 [================>.............] - ETA: 7:04 - loss: 0.7232 - acc: 0.5219
+2752/4566 [=================>............] - ETA: 6:46 - loss: 0.7223 - acc: 0.5233
+2816/4566 [=================>............] - ETA: 6:27 - loss: 0.7222 - acc: 0.5231
+2880/4566 [=================>............] - ETA: 6:09 - loss: 0.7212 - acc: 0.5240
+2944/4566 [==================>...........] - ETA: 5:51 - loss: 0.7193 - acc: 0.5258
+3008/4566 [==================>...........] - ETA: 5:37 - loss: 0.7198 - acc: 0.5256
+3072/4566 [===================>..........] - ETA: 5:23 - loss: 0.7195 - acc: 0.5251
+3136/4566 [===================>..........] - ETA: 5:09 - loss: 0.7198 - acc: 0.5236
+3200/4566 [====================>.........] - ETA: 4:55 - loss: 0.7190 - acc: 0.5244
+3264/4566 [====================>.........] - ETA: 4:42 - loss: 0.7183 - acc: 0.5251
+3328/4566 [====================>.........] - ETA: 4:28 - loss: 0.7180 - acc: 0.5252
+3392/4566 [=====================>........] - ETA: 4:14 - loss: 0.7172 - acc: 0.5256
+3456/4566 [=====================>........] - ETA: 3:59 - loss: 0.7166 - acc: 0.5266
+3520/4566 [======================>.......] - ETA: 3:44 - loss: 0.7159 - acc: 0.5267
+3584/4566 [======================>.......] - ETA: 3:29 - loss: 0.7162 - acc: 0.5259
+3648/4566 [======================>.......] - ETA: 3:14 - loss: 0.7159 - acc: 0.5260
+3712/4566 [=======================>......] - ETA: 2:59 - loss: 0.7156 - acc: 0.5259
+3776/4566 [=======================>......] - ETA: 2:44 - loss: 0.7145 - acc: 0.5278
+3840/4566 [========================>.....] - ETA: 2:30 - loss: 0.7142 - acc: 0.5289
+3904/4566 [========================>.....] - ETA: 2:16 - loss: 0.7144 - acc: 0.5284
+3968/4566 [=========================>....] - ETA: 2:02 - loss: 0.7143 - acc: 0.5275
+4032/4566 [=========================>....] - ETA: 1:48 - loss: 0.7137 - acc: 0.5278
+4096/4566 [=========================>....] - ETA: 1:35 - loss: 0.7129 - acc: 0.5288
+4160/4566 [==========================>...] - ETA: 1:21 - loss: 0.7128 - acc: 0.5281
+4224/4566 [==========================>...] - ETA: 1:08 - loss: 0.7131 - acc: 0.5275
+4288/4566 [===========================>..] - ETA: 55s - loss: 0.7133 - acc: 0.5280 
+4352/4566 [===========================>..] - ETA: 42s - loss: 0.7136 - acc: 0.5267
+4416/4566 [============================>.] - ETA: 29s - loss: 0.7133 - acc: 0.5256
+4480/4566 [============================>.] - ETA: 16s - loss: 0.7129 - acc: 0.5254
+4544/4566 [============================>.] - ETA: 4s - loss: 0.7133 - acc: 0.5249 
+4566/4566 [==============================] - 947s 207ms/step - loss: 0.7133 - acc: 0.5245 - val_loss: 0.7053 - val_acc: 0.5157
+
+Epoch 00001: val_acc improved from -inf to 0.51575, saving model to /data/lyli/Project/Liver_model/Seq_feature_exact/window13/checkpoints/final_seq_model/liver_seq_model_2_mer.hdf5
+Epoch 2/10
+
+  64/4566 [..............................] - ETA: 12:24 - loss: 0.7167 - acc: 0.4844
+ 128/4566 [..............................] - ETA: 10:30 - loss: 0.7143 - acc: 0.5000
+ 192/4566 [>.............................] - ETA: 9:55 - loss: 0.7072 - acc: 0.5208 
+ 256/4566 [>.............................] - ETA: 9:34 - loss: 0.6978 - acc: 0.5312
+ 320/4566 [=>............................] - ETA: 9:15 - loss: 0.7072 - acc: 0.5188
+ 384/4566 [=>............................] - ETA: 9:04 - loss: 0.7101 - acc: 0.5208
+ 448/4566 [=>............................] - ETA: 8:56 - loss: 0.7038 - acc: 0.5312
+ 512/4566 [==>...........................] - ETA: 8:39 - loss: 0.6969 - acc: 0.5488
+ 576/4566 [==>...........................] - ETA: 8:20 - loss: 0.6952 - acc: 0.5486
+ 640/4566 [===>..........................] - ETA: 8:04 - loss: 0.6934 - acc: 0.5484
+ 704/4566 [===>..........................] - ETA: 7:53 - loss: 0.6927 - acc: 0.5469
+ 768/4566 [====>.........................] - ETA: 7:41 - loss: 0.6970 - acc: 0.5417
+ 832/4566 [====>.........................] - ETA: 7:35 - loss: 0.6984 - acc: 0.5385
+ 896/4566 [====>.........................] - ETA: 7:30 - loss: 0.6992 - acc: 0.5346
+ 960/4566 [=====>........................] - ETA: 7:26 - loss: 0.7004 - acc: 0.5375
+1024/4566 [=====>........................] - ETA: 7:33 - loss: 0.7009 - acc: 0.5352
+1088/4566 [======>.......................] - ETA: 7:48 - loss: 0.6982 - acc: 0.5395
+1152/4566 [======>.......................] - ETA: 7:56 - loss: 0.6959 - acc: 0.5443
+1216/4566 [======>.......................] - ETA: 8:04 - loss: 0.6960 - acc: 0.5452
+1280/4566 [=======>......................] - ETA: 8:11 - loss: 0.6948 - acc: 0.5461
+1344/4566 [=======>......................] - ETA: 8:16 - loss: 0.6938 - acc: 0.5484
+1408/4566 [========>.....................] - ETA: 8:20 - loss: 0.6945 - acc: 0.5483
+1472/4566 [========>.....................] - ETA: 8:11 - loss: 0.6937 - acc: 0.5496
+1536/4566 [=========>....................] - ETA: 7:55 - loss: 0.6935 - acc: 0.5495
+1600/4566 [=========>....................] - ETA: 7:40 - loss: 0.6957 - acc: 0.5450
+1664/4566 [=========>....................] - ETA: 7:25 - loss: 0.6942 - acc: 0.5481
+1728/4566 [==========>...................] - ETA: 7:11 - loss: 0.6932 - acc: 0.5515
+1792/4566 [==========>...................] - ETA: 6:57 - loss: 0.6934 - acc: 0.5519
+1856/4566 [===========>..................] - ETA: 6:45 - loss: 0.6934 - acc: 0.5512
+1920/4566 [===========>..................] - ETA: 6:33 - loss: 0.6931 - acc: 0.5531
+1984/4566 [============>.................] - ETA: 6:24 - loss: 0.6929 - acc: 0.5554
+2048/4566 [============>.................] - ETA: 6:14 - loss: 0.6919 - acc: 0.5557
+2112/4566 [============>.................] - ETA: 6:04 - loss: 0.6923 - acc: 0.5535
+2176/4566 [=============>................] - ETA: 5:53 - loss: 0.6922 - acc: 0.5528
+2240/4566 [=============>................] - ETA: 5:42 - loss: 0.6932 - acc: 0.5478
+2304/4566 [==============>...............] - ETA: 5:30 - loss: 0.6922 - acc: 0.5477
+2368/4566 [==============>...............] - ETA: 5:23 - loss: 0.6920 - acc: 0.5481
+2432/4566 [==============>...............] - ETA: 5:18 - loss: 0.6912 - acc: 0.5510
+2496/4566 [===============>..............] - ETA: 5:12 - loss: 0.6920 - acc: 0.5481
+2560/4566 [===============>..............] - ETA: 5:06 - loss: 0.6915 - acc: 0.5477
+2624/4566 [================>.............] - ETA: 5:00 - loss: 0.6920 - acc: 0.5476
+2688/4566 [================>.............] - ETA: 4:53 - loss: 0.6919 - acc: 0.5454
+2752/4566 [=================>............] - ETA: 4:46 - loss: 0.6918 - acc: 0.5454
+2816/4566 [=================>............] - ETA: 4:35 - loss: 0.6920 - acc: 0.5444
+2880/4566 [=================>............] - ETA: 4:23 - loss: 0.6927 - acc: 0.5431
+2944/4566 [==================>...........] - ETA: 4:11 - loss: 0.6931 - acc: 0.5411
+3008/4566 [==================>...........] - ETA: 4:00 - loss: 0.6921 - acc: 0.5436
+3072/4566 [===================>..........] - ETA: 3:49 - loss: 0.6918 - acc: 0.5443
+3136/4566 [===================>..........] - ETA: 3:38 - loss: 0.6927 - acc: 0.5434
+3200/4566 [====================>.........] - ETA: 3:28 - loss: 0.6936 - acc: 0.5422
+3264/4566 [====================>.........] - ETA: 3:17 - loss: 0.6943 - acc: 0.5417
+3328/4566 [====================>.........] - ETA: 3:07 - loss: 0.6936 - acc: 0.5430
+3392/4566 [=====================>........] - ETA: 2:56 - loss: 0.6934 - acc: 0.5433
+3456/4566 [=====================>........] - ETA: 2:46 - loss: 0.6931 - acc: 0.5437
+3520/4566 [======================>.......] - ETA: 2:36 - loss: 0.6926 - acc: 0.5460
+3584/4566 [======================>.......] - ETA: 2:26 - loss: 0.6930 - acc: 0.5472
+3648/4566 [======================>.......] - ETA: 2:16 - loss: 0.6931 - acc: 0.5471
+3712/4566 [=======================>......] - ETA: 2:06 - loss: 0.6935 - acc: 0.5469
+3776/4566 [=======================>......] - ETA: 1:56 - loss: 0.6936 - acc: 0.5461
+3840/4566 [========================>.....] - ETA: 1:48 - loss: 0.6933 - acc: 0.5456
+3904/4566 [========================>.....] - ETA: 1:39 - loss: 0.6938 - acc: 0.5441
+3968/4566 [=========================>....] - ETA: 1:30 - loss: 0.6934 - acc: 0.5444
+4032/4566 [=========================>....] - ETA: 1:21 - loss: 0.6936 - acc: 0.5441
+4096/4566 [=========================>....] - ETA: 1:11 - loss: 0.6941 - acc: 0.5425
+4160/4566 [==========================>...] - ETA: 1:02 - loss: 0.6941 - acc: 0.5423
+4224/4566 [==========================>...] - ETA: 52s - loss: 0.6934 - acc: 0.5433 
+4288/4566 [===========================>..] - ETA: 42s - loss: 0.6931 - acc: 0.5429
+4352/4566 [===========================>..] - ETA: 32s - loss: 0.6927 - acc: 0.5437
+4416/4566 [============================>.] - ETA: 22s - loss: 0.6920 - acc: 0.5453
+4480/4566 [============================>.] - ETA: 13s - loss: 0.6917 - acc: 0.5455
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6919 - acc: 0.5445 
+4566/4566 [==============================] - 711s 156ms/step - loss: 0.6920 - acc: 0.5440 - val_loss: 0.6929 - val_acc: 0.5295
+
+Epoch 00002: val_acc improved from 0.51575 to 0.52953, saving model to /data/lyli/Project/Liver_model/Seq_feature_exact/window13/checkpoints/final_seq_model/liver_seq_model_2_mer.hdf5
+Epoch 3/10
+
+  64/4566 [..............................] - ETA: 7:51 - loss: 0.6580 - acc: 0.6094
+ 128/4566 [..............................] - ETA: 8:23 - loss: 0.6816 - acc: 0.5859
+ 192/4566 [>.............................] - ETA: 8:18 - loss: 0.7008 - acc: 0.5573
+ 256/4566 [>.............................] - ETA: 7:58 - loss: 0.6891 - acc: 0.5781
+ 320/4566 [=>............................] - ETA: 7:50 - loss: 0.6926 - acc: 0.5687
+ 384/4566 [=>............................] - ETA: 7:40 - loss: 0.6885 - acc: 0.5781
+ 448/4566 [=>............................] - ETA: 8:07 - loss: 0.6910 - acc: 0.5603
+ 512/4566 [==>...........................] - ETA: 8:50 - loss: 0.6938 - acc: 0.5547
+ 576/4566 [==>...........................] - ETA: 9:29 - loss: 0.6933 - acc: 0.5538
+ 640/4566 [===>..........................] - ETA: 9:49 - loss: 0.6973 - acc: 0.5469
+ 704/4566 [===>..........................] - ETA: 10:02 - loss: 0.6952 - acc: 0.5483
+ 768/4566 [====>.........................] - ETA: 10:18 - loss: 0.6925 - acc: 0.5482
+ 832/4566 [====>.........................] - ETA: 10:24 - loss: 0.6939 - acc: 0.5457
+ 896/4566 [====>.........................] - ETA: 10:08 - loss: 0.6938 - acc: 0.5424
+ 960/4566 [=====>........................] - ETA: 9:47 - loss: 0.6919 - acc: 0.5479 
+1024/4566 [=====>........................] - ETA: 9:26 - loss: 0.6903 - acc: 0.5469
+1088/4566 [======>.......................] - ETA: 9:07 - loss: 0.6899 - acc: 0.5487
+1152/4566 [======>.......................] - ETA: 8:46 - loss: 0.6905 - acc: 0.5477
+1216/4566 [======>.......................] - ETA: 8:28 - loss: 0.6921 - acc: 0.5461
+1280/4566 [=======>......................] - ETA: 8:12 - loss: 0.6911 - acc: 0.5445
+1344/4566 [=======>......................] - ETA: 7:56 - loss: 0.6914 - acc: 0.5417
+1408/4566 [========>.....................] - ETA: 7:41 - loss: 0.6907 - acc: 0.5433
+1472/4566 [========>.....................] - ETA: 7:25 - loss: 0.6910 - acc: 0.5421
+1536/4566 [=========>....................] - ETA: 7:11 - loss: 0.6915 - acc: 0.5404
+1600/4566 [=========>....................] - ETA: 6:56 - loss: 0.6900 - acc: 0.5431
+1664/4566 [=========>....................] - ETA: 6:42 - loss: 0.6896 - acc: 0.5451
+1728/4566 [==========>...................] - ETA: 6:29 - loss: 0.6908 - acc: 0.5428
+1792/4566 [==========>...................] - ETA: 6:17 - loss: 0.6923 - acc: 0.5385
+1856/4566 [===========>..................] - ETA: 6:08 - loss: 0.6917 - acc: 0.5420
+1920/4566 [===========>..................] - ETA: 6:09 - loss: 0.6911 - acc: 0.5437
+1984/4566 [============>.................] - ETA: 6:08 - loss: 0.6911 - acc: 0.5433
+2048/4566 [============>.................] - ETA: 6:05 - loss: 0.6915 - acc: 0.5405
+2112/4566 [============>.................] - ETA: 6:01 - loss: 0.6920 - acc: 0.5365
+2176/4566 [=============>................] - ETA: 5:56 - loss: 0.6922 - acc: 0.5354
+2240/4566 [=============>................] - ETA: 5:51 - loss: 0.6916 - acc: 0.5375
+2304/4566 [==============>...............] - ETA: 5:44 - loss: 0.6919 - acc: 0.5365
+2368/4566 [==============>...............] - ETA: 5:34 - loss: 0.6924 - acc: 0.5359
+2432/4566 [==============>...............] - ETA: 5:22 - loss: 0.6931 - acc: 0.5350
+2496/4566 [===============>..............] - ETA: 5:10 - loss: 0.6927 - acc: 0.5357
+2560/4566 [===============>..............] - ETA: 4:58 - loss: 0.6929 - acc: 0.5332
+2624/4566 [================>.............] - ETA: 4:47 - loss: 0.6923 - acc: 0.5328
+2688/4566 [================>.............] - ETA: 4:36 - loss: 0.6914 - acc: 0.5357
+2752/4566 [=================>............] - ETA: 4:24 - loss: 0.6911 - acc: 0.5360
+2816/4566 [=================>............] - ETA: 4:13 - loss: 0.6902 - acc: 0.5391
+2880/4566 [=================>............] - ETA: 4:02 - loss: 0.6898 - acc: 0.5399
+2944/4566 [==================>...........] - ETA: 3:51 - loss: 0.6895 - acc: 0.5404
+3008/4566 [==================>...........] - ETA: 3:41 - loss: 0.6886 - acc: 0.5419
+3072/4566 [===================>..........] - ETA: 3:31 - loss: 0.6884 - acc: 0.5417
+3136/4566 [===================>..........] - ETA: 3:22 - loss: 0.6884 - acc: 0.5418
+3200/4566 [====================>.........] - ETA: 3:12 - loss: 0.6887 - acc: 0.5409
+3264/4566 [====================>.........] - ETA: 3:03 - loss: 0.6892 - acc: 0.5398
+3328/4566 [====================>.........] - ETA: 2:56 - loss: 0.6890 - acc: 0.5418
+3392/4566 [=====================>........] - ETA: 2:49 - loss: 0.6899 - acc: 0.5419
+3456/4566 [=====================>........] - ETA: 2:41 - loss: 0.6904 - acc: 0.5417
+3520/4566 [======================>.......] - ETA: 2:34 - loss: 0.6908 - acc: 0.5401
+3584/4566 [======================>.......] - ETA: 2:26 - loss: 0.6906 - acc: 0.5405
+3648/4566 [======================>.......] - ETA: 2:18 - loss: 0.6904 - acc: 0.5417
+3712/4566 [=======================>......] - ETA: 2:09 - loss: 0.6906 - acc: 0.5418
+3776/4566 [=======================>......] - ETA: 1:59 - loss: 0.6906 - acc: 0.5424
+3840/4566 [========================>.....] - ETA: 1:48 - loss: 0.6906 - acc: 0.5432
+3904/4566 [========================>.....] - ETA: 1:38 - loss: 0.6904 - acc: 0.5441
+3968/4566 [=========================>....] - ETA: 1:28 - loss: 0.6912 - acc: 0.5433
+4032/4566 [=========================>....] - ETA: 1:18 - loss: 0.6911 - acc: 0.5432
+4096/4566 [=========================>....] - ETA: 1:08 - loss: 0.6909 - acc: 0.5435
+4160/4566 [==========================>...] - ETA: 59s - loss: 0.6907 - acc: 0.5437 
+4224/4566 [==========================>...] - ETA: 49s - loss: 0.6907 - acc: 0.5431
+4288/4566 [===========================>..] - ETA: 40s - loss: 0.6903 - acc: 0.5438
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6909 - acc: 0.5441
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6905 - acc: 0.5451
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6907 - acc: 0.5444
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6904 - acc: 0.5456 
+4566/4566 [==============================] - 680s 149ms/step - loss: 0.6904 - acc: 0.5451 - val_loss: 0.6812 - val_acc: 0.5571
+
+Epoch 00003: val_acc improved from 0.52953 to 0.55709, saving model to /data/lyli/Project/Liver_model/Seq_feature_exact/window13/checkpoints/final_seq_model/liver_seq_model_2_mer.hdf5
+Epoch 4/10
+
+  64/4566 [..............................] - ETA: 16:50 - loss: 0.6878 - acc: 0.5625
+ 128/4566 [..............................] - ETA: 16:14 - loss: 0.6957 - acc: 0.5156
+ 192/4566 [>.............................] - ETA: 15:55 - loss: 0.6737 - acc: 0.5521
+ 256/4566 [>.............................] - ETA: 15:39 - loss: 0.6831 - acc: 0.5508
+ 320/4566 [=>............................] - ETA: 15:28 - loss: 0.6854 - acc: 0.5625
+ 384/4566 [=>............................] - ETA: 15:23 - loss: 0.6835 - acc: 0.5625
+ 448/4566 [=>............................] - ETA: 14:23 - loss: 0.6767 - acc: 0.5737
+ 512/4566 [==>...........................] - ETA: 13:21 - loss: 0.6745 - acc: 0.5840
+ 576/4566 [==>...........................] - ETA: 12:32 - loss: 0.6762 - acc: 0.5799
+ 640/4566 [===>..........................] - ETA: 11:55 - loss: 0.6796 - acc: 0.5781
+ 704/4566 [===>..........................] - ETA: 11:23 - loss: 0.6763 - acc: 0.5866
+ 768/4566 [====>.........................] - ETA: 10:51 - loss: 0.6797 - acc: 0.5807
+ 832/4566 [====>.........................] - ETA: 10:24 - loss: 0.6780 - acc: 0.5841
+ 896/4566 [====>.........................] - ETA: 9:59 - loss: 0.6799 - acc: 0.5770 
+ 960/4566 [=====>........................] - ETA: 9:36 - loss: 0.6808 - acc: 0.5760
+1024/4566 [=====>........................] - ETA: 9:15 - loss: 0.6814 - acc: 0.5742
+1088/4566 [======>.......................] - ETA: 8:56 - loss: 0.6794 - acc: 0.5754
+1152/4566 [======>.......................] - ETA: 8:37 - loss: 0.6816 - acc: 0.5703
+1216/4566 [======>.......................] - ETA: 8:19 - loss: 0.6840 - acc: 0.5666
+1280/4566 [=======>......................] - ETA: 8:04 - loss: 0.6825 - acc: 0.5656
+1344/4566 [=======>......................] - ETA: 7:49 - loss: 0.6831 - acc: 0.5655
+1408/4566 [========>.....................] - ETA: 7:37 - loss: 0.6837 - acc: 0.5632
+1472/4566 [========>.....................] - ETA: 7:38 - loss: 0.6842 - acc: 0.5605
+1536/4566 [=========>....................] - ETA: 7:37 - loss: 0.6844 - acc: 0.5579
+1600/4566 [=========>....................] - ETA: 7:35 - loss: 0.6833 - acc: 0.5637
+1664/4566 [=========>....................] - ETA: 7:33 - loss: 0.6818 - acc: 0.5685
+1728/4566 [==========>...................] - ETA: 7:29 - loss: 0.6824 - acc: 0.5689
+1792/4566 [==========>...................] - ETA: 7:25 - loss: 0.6819 - acc: 0.5675
+1856/4566 [===========>..................] - ETA: 7:15 - loss: 0.6802 - acc: 0.5733
+1920/4566 [===========>..................] - ETA: 7:02 - loss: 0.6801 - acc: 0.5755
+1984/4566 [============>.................] - ETA: 6:48 - loss: 0.6793 - acc: 0.5781
+2048/4566 [============>.................] - ETA: 6:35 - loss: 0.6778 - acc: 0.5806
+2112/4566 [============>.................] - ETA: 6:21 - loss: 0.6786 - acc: 0.5795
+2176/4566 [=============>................] - ETA: 6:08 - loss: 0.6799 - acc: 0.5772
+2240/4566 [=============>................] - ETA: 5:56 - loss: 0.6798 - acc: 0.5763
+2304/4566 [==============>...............] - ETA: 5:43 - loss: 0.6796 - acc: 0.5760
+2368/4566 [==============>...............] - ETA: 5:31 - loss: 0.6801 - acc: 0.5752
+2432/4566 [==============>...............] - ETA: 5:19 - loss: 0.6809 - acc: 0.5744
+2496/4566 [===============>..............] - ETA: 5:07 - loss: 0.6803 - acc: 0.5753
+2560/4566 [===============>..............] - ETA: 4:56 - loss: 0.6811 - acc: 0.5727
+2624/4566 [================>.............] - ETA: 4:44 - loss: 0.6816 - acc: 0.5724
+2688/4566 [================>.............] - ETA: 4:33 - loss: 0.6819 - acc: 0.5725
+2752/4566 [=================>............] - ETA: 4:22 - loss: 0.6821 - acc: 0.5723
+2816/4566 [=================>............] - ETA: 4:11 - loss: 0.6815 - acc: 0.5742
+2880/4566 [=================>............] - ETA: 4:03 - loss: 0.6809 - acc: 0.5757
+2944/4566 [==================>...........] - ETA: 3:57 - loss: 0.6811 - acc: 0.5751
+3008/4566 [==================>...........] - ETA: 3:50 - loss: 0.6820 - acc: 0.5731
+3072/4566 [===================>..........] - ETA: 3:43 - loss: 0.6823 - acc: 0.5742
+3136/4566 [===================>..........] - ETA: 3:36 - loss: 0.6827 - acc: 0.5740
+3200/4566 [====================>.........] - ETA: 3:28 - loss: 0.6825 - acc: 0.5747
+3264/4566 [====================>.........] - ETA: 3:20 - loss: 0.6825 - acc: 0.5757
+3328/4566 [====================>.........] - ETA: 3:10 - loss: 0.6828 - acc: 0.5742
+3392/4566 [=====================>........] - ETA: 2:59 - loss: 0.6824 - acc: 0.5737
+3456/4566 [=====================>........] - ETA: 2:48 - loss: 0.6824 - acc: 0.5729
+3520/4566 [======================>.......] - ETA: 2:38 - loss: 0.6822 - acc: 0.5727
+3584/4566 [======================>.......] - ETA: 2:27 - loss: 0.6814 - acc: 0.5745
+3648/4566 [======================>.......] - ETA: 2:17 - loss: 0.6820 - acc: 0.5729
+3712/4566 [=======================>......] - ETA: 2:07 - loss: 0.6812 - acc: 0.5749
+3776/4566 [=======================>......] - ETA: 1:57 - loss: 0.6818 - acc: 0.5728
+3840/4566 [========================>.....] - ETA: 1:47 - loss: 0.6820 - acc: 0.5729
+3904/4566 [========================>.....] - ETA: 1:37 - loss: 0.6812 - acc: 0.5740
+3968/4566 [=========================>....] - ETA: 1:27 - loss: 0.6811 - acc: 0.5731
+4032/4566 [=========================>....] - ETA: 1:17 - loss: 0.6816 - acc: 0.5719
+4096/4566 [=========================>....] - ETA: 1:07 - loss: 0.6818 - acc: 0.5708
+4160/4566 [==========================>...] - ETA: 58s - loss: 0.6820 - acc: 0.5702 
+4224/4566 [==========================>...] - ETA: 49s - loss: 0.6816 - acc: 0.5713
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6817 - acc: 0.5714
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6822 - acc: 0.5708
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6818 - acc: 0.5713
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6816 - acc: 0.5721
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6817 - acc: 0.5709 
+4566/4566 [==============================] - 717s 157ms/step - loss: 0.6818 - acc: 0.5705 - val_loss: 0.6809 - val_acc: 0.5866
+
+Epoch 00004: val_acc improved from 0.55709 to 0.58661, saving model to /data/lyli/Project/Liver_model/Seq_feature_exact/window13/checkpoints/final_seq_model/liver_seq_model_2_mer.hdf5
+Epoch 5/10
+
+  64/4566 [..............................] - ETA: 9:17 - loss: 0.6758 - acc: 0.6094
+ 128/4566 [..............................] - ETA: 8:33 - loss: 0.6779 - acc: 0.5938
+ 192/4566 [>.............................] - ETA: 8:04 - loss: 0.6691 - acc: 0.6250
+ 256/4566 [>.............................] - ETA: 7:47 - loss: 0.6676 - acc: 0.6133
+ 320/4566 [=>............................] - ETA: 7:33 - loss: 0.6740 - acc: 0.5906
+ 384/4566 [=>............................] - ETA: 7:17 - loss: 0.6690 - acc: 0.6094
+ 448/4566 [=>............................] - ETA: 7:11 - loss: 0.6754 - acc: 0.6004
+ 512/4566 [==>...........................] - ETA: 7:02 - loss: 0.6708 - acc: 0.6074
+ 576/4566 [==>...........................] - ETA: 6:52 - loss: 0.6683 - acc: 0.6076
+ 640/4566 [===>..........................] - ETA: 6:49 - loss: 0.6677 - acc: 0.6125
+ 704/4566 [===>..........................] - ETA: 6:46 - loss: 0.6736 - acc: 0.5994
+ 768/4566 [====>.........................] - ETA: 6:42 - loss: 0.6731 - acc: 0.5977
+ 832/4566 [====>.........................] - ETA: 6:38 - loss: 0.6737 - acc: 0.5938
+ 896/4566 [====>.........................] - ETA: 6:34 - loss: 0.6765 - acc: 0.5904
+ 960/4566 [=====>........................] - ETA: 6:38 - loss: 0.6776 - acc: 0.5865
+1024/4566 [=====>........................] - ETA: 6:54 - loss: 0.6763 - acc: 0.5908
+1088/4566 [======>.......................] - ETA: 7:10 - loss: 0.6755 - acc: 0.5919
+1152/4566 [======>.......................] - ETA: 7:26 - loss: 0.6748 - acc: 0.5903
+1216/4566 [======>.......................] - ETA: 7:31 - loss: 0.6775 - acc: 0.5847
+1280/4566 [=======>......................] - ETA: 7:39 - loss: 0.6792 - acc: 0.5781
+1344/4566 [=======>......................] - ETA: 7:45 - loss: 0.6795 - acc: 0.5796
+1408/4566 [========>.....................] - ETA: 7:42 - loss: 0.6801 - acc: 0.5781
+1472/4566 [========>.....................] - ETA: 7:29 - loss: 0.6820 - acc: 0.5740
+1536/4566 [=========>....................] - ETA: 7:14 - loss: 0.6807 - acc: 0.5755
+1600/4566 [=========>....................] - ETA: 6:59 - loss: 0.6829 - acc: 0.5700
+1664/4566 [=========>....................] - ETA: 6:45 - loss: 0.6821 - acc: 0.5703
+1728/4566 [==========>...................] - ETA: 6:32 - loss: 0.6818 - acc: 0.5712
+1792/4566 [==========>...................] - ETA: 6:22 - loss: 0.6796 - acc: 0.5765
+1856/4566 [===========>..................] - ETA: 6:11 - loss: 0.6792 - acc: 0.5765
+1920/4566 [===========>..................] - ETA: 6:01 - loss: 0.6778 - acc: 0.5792
+1984/4566 [============>.................] - ETA: 5:50 - loss: 0.6790 - acc: 0.5786
+2048/4566 [============>.................] - ETA: 5:39 - loss: 0.6782 - acc: 0.5776
+2112/4566 [============>.................] - ETA: 5:28 - loss: 0.6787 - acc: 0.5777
+2176/4566 [=============>................] - ETA: 5:18 - loss: 0.6791 - acc: 0.5772
+2240/4566 [=============>................] - ETA: 5:08 - loss: 0.6785 - acc: 0.5786
+2304/4566 [==============>...............] - ETA: 4:58 - loss: 0.6785 - acc: 0.5781
+2368/4566 [==============>...............] - ETA: 4:48 - loss: 0.6778 - acc: 0.5790
+2432/4566 [==============>...............] - ETA: 4:40 - loss: 0.6772 - acc: 0.5781
+2496/4566 [===============>..............] - ETA: 4:37 - loss: 0.6769 - acc: 0.5781
+2560/4566 [===============>..............] - ETA: 4:33 - loss: 0.6772 - acc: 0.5785
+2624/4566 [================>.............] - ETA: 4:28 - loss: 0.6773 - acc: 0.5774
+2688/4566 [================>.............] - ETA: 4:24 - loss: 0.6771 - acc: 0.5763
+2752/4566 [=================>............] - ETA: 4:18 - loss: 0.6769 - acc: 0.5759
+2816/4566 [=================>............] - ETA: 4:12 - loss: 0.6758 - acc: 0.5785
+2880/4566 [=================>............] - ETA: 4:03 - loss: 0.6761 - acc: 0.5771
+2944/4566 [==================>...........] - ETA: 3:52 - loss: 0.6767 - acc: 0.5761
+3008/4566 [==================>...........] - ETA: 3:42 - loss: 0.6773 - acc: 0.5745
+3072/4566 [===================>..........] - ETA: 3:32 - loss: 0.6783 - acc: 0.5729
+3136/4566 [===================>..........] - ETA: 3:23 - loss: 0.6783 - acc: 0.5733
+3200/4566 [====================>.........] - ETA: 3:13 - loss: 0.6780 - acc: 0.5737
+3264/4566 [====================>.........] - ETA: 3:03 - loss: 0.6787 - acc: 0.5708
+3328/4566 [====================>.........] - ETA: 2:53 - loss: 0.6783 - acc: 0.5718
+3392/4566 [=====================>........] - ETA: 2:43 - loss: 0.6784 - acc: 0.5722
+3456/4566 [=====================>........] - ETA: 2:34 - loss: 0.6788 - acc: 0.5703
+3520/4566 [======================>.......] - ETA: 2:24 - loss: 0.6790 - acc: 0.5690
+3584/4566 [======================>.......] - ETA: 2:15 - loss: 0.6790 - acc: 0.5689
+3648/4566 [======================>.......] - ETA: 2:06 - loss: 0.6785 - acc: 0.5704
+3712/4566 [=======================>......] - ETA: 1:57 - loss: 0.6793 - acc: 0.5695
+3776/4566 [=======================>......] - ETA: 1:47 - loss: 0.6793 - acc: 0.5699
+3840/4566 [========================>.....] - ETA: 1:38 - loss: 0.6791 - acc: 0.5698
+3904/4566 [========================>.....] - ETA: 1:29 - loss: 0.6795 - acc: 0.5684
+3968/4566 [=========================>....] - ETA: 1:21 - loss: 0.6801 - acc: 0.5680
+4032/4566 [=========================>....] - ETA: 1:13 - loss: 0.6807 - acc: 0.5672
+4096/4566 [=========================>....] - ETA: 1:05 - loss: 0.6805 - acc: 0.5684
+4160/4566 [==========================>...] - ETA: 57s - loss: 0.6806 - acc: 0.5678 
+4224/4566 [==========================>...] - ETA: 48s - loss: 0.6804 - acc: 0.5689
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6803 - acc: 0.5686
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6798 - acc: 0.5703
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6796 - acc: 0.5702
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6794 - acc: 0.5714
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6790 - acc: 0.5728 
+4566/4566 [==============================] - 670s 147ms/step - loss: 0.6791 - acc: 0.5725 - val_loss: 0.6768 - val_acc: 0.5846
+
+Epoch 00005: val_acc did not improve from 0.58661
+Epoch 6/10
+
+  64/4566 [..............................] - ETA: 8:27 - loss: 0.6580 - acc: 0.6250
+ 128/4566 [..............................] - ETA: 8:17 - loss: 0.6567 - acc: 0.6328
+ 192/4566 [>.............................] - ETA: 8:13 - loss: 0.6597 - acc: 0.6250
+ 256/4566 [>.............................] - ETA: 7:56 - loss: 0.6573 - acc: 0.6172
+ 320/4566 [=>............................] - ETA: 7:40 - loss: 0.6657 - acc: 0.6000
+ 384/4566 [=>............................] - ETA: 7:29 - loss: 0.6690 - acc: 0.5964
+ 448/4566 [=>............................] - ETA: 7:14 - loss: 0.6696 - acc: 0.5960
+ 512/4566 [==>...........................] - ETA: 7:04 - loss: 0.6675 - acc: 0.5957
+ 576/4566 [==>...........................] - ETA: 7:07 - loss: 0.6661 - acc: 0.5990
+ 640/4566 [===>..........................] - ETA: 7:48 - loss: 0.6707 - acc: 0.5938
+ 704/4566 [===>..........................] - ETA: 8:20 - loss: 0.6693 - acc: 0.5966
+ 768/4566 [====>.........................] - ETA: 8:44 - loss: 0.6699 - acc: 0.5924
+ 832/4566 [====>.........................] - ETA: 9:00 - loss: 0.6697 - acc: 0.5938
+ 896/4566 [====>.........................] - ETA: 9:11 - loss: 0.6731 - acc: 0.5871
+ 960/4566 [=====>........................] - ETA: 9:15 - loss: 0.6742 - acc: 0.5833
+1024/4566 [=====>........................] - ETA: 9:14 - loss: 0.6744 - acc: 0.5811
+1088/4566 [======>.......................] - ETA: 8:55 - loss: 0.6757 - acc: 0.5818
+1152/4566 [======>.......................] - ETA: 8:37 - loss: 0.6746 - acc: 0.5790
+1216/4566 [======>.......................] - ETA: 8:18 - loss: 0.6755 - acc: 0.5798
+1280/4566 [=======>......................] - ETA: 8:03 - loss: 0.6770 - acc: 0.5797
+1344/4566 [=======>......................] - ETA: 7:48 - loss: 0.6798 - acc: 0.5774
+1408/4566 [========>.....................] - ETA: 7:34 - loss: 0.6806 - acc: 0.5760
+1472/4566 [========>.....................] - ETA: 7:20 - loss: 0.6795 - acc: 0.5781
+1536/4566 [=========>....................] - ETA: 7:06 - loss: 0.6787 - acc: 0.5781
+1600/4566 [=========>....................] - ETA: 6:51 - loss: 0.6785 - acc: 0.5781
+1664/4566 [=========>....................] - ETA: 6:38 - loss: 0.6777 - acc: 0.5781
+1728/4566 [==========>...................] - ETA: 6:25 - loss: 0.6788 - acc: 0.5758
+1792/4566 [==========>...................] - ETA: 6:13 - loss: 0.6767 - acc: 0.5781
+1856/4566 [===========>..................] - ETA: 6:02 - loss: 0.6773 - acc: 0.5754
+1920/4566 [===========>..................] - ETA: 5:51 - loss: 0.6763 - acc: 0.5776
+1984/4566 [============>.................] - ETA: 5:42 - loss: 0.6771 - acc: 0.5761
+2048/4566 [============>.................] - ETA: 5:37 - loss: 0.6777 - acc: 0.5737
+2112/4566 [============>.................] - ETA: 5:35 - loss: 0.6782 - acc: 0.5729
+2176/4566 [=============>................] - ETA: 5:33 - loss: 0.6782 - acc: 0.5722
+2240/4566 [=============>................] - ETA: 5:29 - loss: 0.6796 - acc: 0.5687
+2304/4566 [==============>...............] - ETA: 5:24 - loss: 0.6779 - acc: 0.5720
+2368/4566 [==============>...............] - ETA: 5:21 - loss: 0.6769 - acc: 0.5743
+2432/4566 [==============>...............] - ETA: 5:17 - loss: 0.6774 - acc: 0.5748
+2496/4566 [===============>..............] - ETA: 5:08 - loss: 0.6779 - acc: 0.5741
+2560/4566 [===============>..............] - ETA: 4:56 - loss: 0.6772 - acc: 0.5750
+2624/4566 [================>.............] - ETA: 4:45 - loss: 0.6768 - acc: 0.5762
+2688/4566 [================>.............] - ETA: 4:34 - loss: 0.6762 - acc: 0.5778
+2752/4566 [=================>............] - ETA: 4:23 - loss: 0.6760 - acc: 0.5789
+2816/4566 [=================>............] - ETA: 4:12 - loss: 0.6747 - acc: 0.5824
+2880/4566 [=================>............] - ETA: 4:00 - loss: 0.6745 - acc: 0.5826
+2944/4566 [==================>...........] - ETA: 3:50 - loss: 0.6746 - acc: 0.5832
+3008/4566 [==================>...........] - ETA: 3:40 - loss: 0.6749 - acc: 0.5824
+3072/4566 [===================>..........] - ETA: 3:30 - loss: 0.6743 - acc: 0.5817
+3136/4566 [===================>..........] - ETA: 3:20 - loss: 0.6740 - acc: 0.5829
+3200/4566 [====================>.........] - ETA: 3:11 - loss: 0.6755 - acc: 0.5819
+3264/4566 [====================>.........] - ETA: 3:01 - loss: 0.6765 - acc: 0.5800
+3328/4566 [====================>.........] - ETA: 2:51 - loss: 0.6776 - acc: 0.5784
+3392/4566 [=====================>........] - ETA: 2:42 - loss: 0.6773 - acc: 0.5787
+3456/4566 [=====================>........] - ETA: 2:32 - loss: 0.6762 - acc: 0.5804
+3520/4566 [======================>.......] - ETA: 2:25 - loss: 0.6760 - acc: 0.5804
+3584/4566 [======================>.......] - ETA: 2:17 - loss: 0.6765 - acc: 0.5795
+3648/4566 [======================>.......] - ETA: 2:10 - loss: 0.6756 - acc: 0.5811
+3712/4566 [=======================>......] - ETA: 2:02 - loss: 0.6757 - acc: 0.5814
+3776/4566 [=======================>......] - ETA: 1:54 - loss: 0.6754 - acc: 0.5818
+3840/4566 [========================>.....] - ETA: 1:46 - loss: 0.6769 - acc: 0.5786
+3904/4566 [========================>.....] - ETA: 1:37 - loss: 0.6765 - acc: 0.5786
+3968/4566 [=========================>....] - ETA: 1:27 - loss: 0.6771 - acc: 0.5779
+4032/4566 [=========================>....] - ETA: 1:17 - loss: 0.6775 - acc: 0.5766
+4096/4566 [=========================>....] - ETA: 1:08 - loss: 0.6783 - acc: 0.5759
+4160/4566 [==========================>...] - ETA: 58s - loss: 0.6784 - acc: 0.5750 
+4224/4566 [==========================>...] - ETA: 49s - loss: 0.6786 - acc: 0.5736
+4288/4566 [===========================>..] - ETA: 40s - loss: 0.6783 - acc: 0.5735
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6781 - acc: 0.5740
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6779 - acc: 0.5745
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6778 - acc: 0.5757
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6779 - acc: 0.5757 
+4566/4566 [==============================] - 671s 147ms/step - loss: 0.6778 - acc: 0.5760 - val_loss: 0.6810 - val_acc: 0.5827
+
+Epoch 00006: val_acc did not improve from 0.58661
+Epoch 7/10
+
+  64/4566 [..............................] - ETA: 8:08 - loss: 0.6687 - acc: 0.5781
+ 128/4566 [..............................] - ETA: 7:57 - loss: 0.6807 - acc: 0.5859
+ 192/4566 [>.............................] - ETA: 9:06 - loss: 0.6824 - acc: 0.5729
+ 256/4566 [>.............................] - ETA: 10:27 - loss: 0.6820 - acc: 0.5781
+ 320/4566 [=>............................] - ETA: 11:26 - loss: 0.6718 - acc: 0.6031
+ 384/4566 [=>............................] - ETA: 12:06 - loss: 0.6738 - acc: 0.5964
+ 448/4566 [=>............................] - ETA: 12:15 - loss: 0.6738 - acc: 0.5938
+ 512/4566 [==>...........................] - ETA: 12:27 - loss: 0.6734 - acc: 0.5938
+ 576/4566 [==>...........................] - ETA: 12:31 - loss: 0.6740 - acc: 0.5903
+ 640/4566 [===>..........................] - ETA: 11:57 - loss: 0.6746 - acc: 0.5891
+ 704/4566 [===>..........................] - ETA: 11:23 - loss: 0.6763 - acc: 0.5866
+ 768/4566 [====>.........................] - ETA: 10:50 - loss: 0.6759 - acc: 0.5872
+ 832/4566 [====>.........................] - ETA: 10:22 - loss: 0.6755 - acc: 0.5877
+ 896/4566 [====>.........................] - ETA: 9:56 - loss: 0.6765 - acc: 0.5893 
+ 960/4566 [=====>........................] - ETA: 9:33 - loss: 0.6763 - acc: 0.5896
+1024/4566 [=====>........................] - ETA: 9:11 - loss: 0.6775 - acc: 0.5879
+1088/4566 [======>.......................] - ETA: 8:49 - loss: 0.6776 - acc: 0.5855
+1152/4566 [======>.......................] - ETA: 8:32 - loss: 0.6783 - acc: 0.5816
+1216/4566 [======>.......................] - ETA: 8:14 - loss: 0.6771 - acc: 0.5831
+1280/4566 [=======>......................] - ETA: 7:59 - loss: 0.6756 - acc: 0.5852
+1344/4566 [=======>......................] - ETA: 7:44 - loss: 0.6753 - acc: 0.5856
+1408/4566 [========>.....................] - ETA: 7:29 - loss: 0.6745 - acc: 0.5859
+1472/4566 [========>.....................] - ETA: 7:14 - loss: 0.6750 - acc: 0.5849
+1536/4566 [=========>....................] - ETA: 6:59 - loss: 0.6758 - acc: 0.5853
+1600/4566 [=========>....................] - ETA: 6:46 - loss: 0.6758 - acc: 0.5856
+1664/4566 [=========>....................] - ETA: 6:42 - loss: 0.6770 - acc: 0.5847
+1728/4566 [==========>...................] - ETA: 6:43 - loss: 0.6777 - acc: 0.5828
+1792/4566 [==========>...................] - ETA: 6:41 - loss: 0.6767 - acc: 0.5848
+1856/4566 [===========>..................] - ETA: 6:39 - loss: 0.6760 - acc: 0.5873
+1920/4566 [===========>..................] - ETA: 6:37 - loss: 0.6745 - acc: 0.5885
+1984/4566 [============>.................] - ETA: 6:33 - loss: 0.6748 - acc: 0.5877
+2048/4566 [============>.................] - ETA: 6:26 - loss: 0.6764 - acc: 0.5845
+2112/4566 [============>.................] - ETA: 6:15 - loss: 0.6765 - acc: 0.5833
+2176/4566 [=============>................] - ETA: 6:04 - loss: 0.6769 - acc: 0.5827
+2240/4566 [=============>................] - ETA: 5:51 - loss: 0.6765 - acc: 0.5848
+2304/4566 [==============>...............] - ETA: 5:39 - loss: 0.6761 - acc: 0.5868
+2368/4566 [==============>...............] - ETA: 5:27 - loss: 0.6768 - acc: 0.5840
+2432/4566 [==============>...............] - ETA: 5:15 - loss: 0.6772 - acc: 0.5814
+2496/4566 [===============>..............] - ETA: 5:04 - loss: 0.6762 - acc: 0.5845
+2560/4566 [===============>..............] - ETA: 4:53 - loss: 0.6761 - acc: 0.5852
+2624/4566 [================>.............] - ETA: 4:42 - loss: 0.6765 - acc: 0.5846
+2688/4566 [================>.............] - ETA: 4:31 - loss: 0.6758 - acc: 0.5859
+2752/4566 [=================>............] - ETA: 4:20 - loss: 0.6756 - acc: 0.5854
+2816/4566 [=================>............] - ETA: 4:09 - loss: 0.6746 - acc: 0.5874
+2880/4566 [=================>............] - ETA: 3:58 - loss: 0.6741 - acc: 0.5878
+2944/4566 [==================>...........] - ETA: 3:48 - loss: 0.6742 - acc: 0.5870
+3008/4566 [==================>...........] - ETA: 3:38 - loss: 0.6750 - acc: 0.5861
+3072/4566 [===================>..........] - ETA: 3:30 - loss: 0.6760 - acc: 0.5840
+3136/4566 [===================>..........] - ETA: 3:23 - loss: 0.6759 - acc: 0.5851
+3200/4566 [====================>.........] - ETA: 3:16 - loss: 0.6755 - acc: 0.5866
+3264/4566 [====================>.........] - ETA: 3:09 - loss: 0.6760 - acc: 0.5852
+3328/4566 [====================>.........] - ETA: 3:01 - loss: 0.6767 - acc: 0.5847
+3392/4566 [=====================>........] - ETA: 2:53 - loss: 0.6772 - acc: 0.5831
+3456/4566 [=====================>........] - ETA: 2:45 - loss: 0.6772 - acc: 0.5833
+3520/4566 [======================>.......] - ETA: 2:37 - loss: 0.6770 - acc: 0.5832
+3584/4566 [======================>.......] - ETA: 2:27 - loss: 0.6773 - acc: 0.5818
+3648/4566 [======================>.......] - ETA: 2:17 - loss: 0.6771 - acc: 0.5822
+3712/4566 [=======================>......] - ETA: 2:07 - loss: 0.6767 - acc: 0.5830
+3776/4566 [=======================>......] - ETA: 1:57 - loss: 0.6766 - acc: 0.5826
+3840/4566 [========================>.....] - ETA: 1:47 - loss: 0.6767 - acc: 0.5818
+3904/4566 [========================>.....] - ETA: 1:37 - loss: 0.6767 - acc: 0.5830
+3968/4566 [=========================>....] - ETA: 1:27 - loss: 0.6768 - acc: 0.5834
+4032/4566 [=========================>....] - ETA: 1:17 - loss: 0.6766 - acc: 0.5843
+4096/4566 [=========================>....] - ETA: 1:08 - loss: 0.6768 - acc: 0.5842
+4160/4566 [==========================>...] - ETA: 58s - loss: 0.6767 - acc: 0.5844 
+4224/4566 [==========================>...] - ETA: 49s - loss: 0.6768 - acc: 0.5840
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6764 - acc: 0.5844
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6768 - acc: 0.5832
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6770 - acc: 0.5831
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6767 - acc: 0.5833
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6772 - acc: 0.5819 
+4566/4566 [==============================] - 701s 154ms/step - loss: 0.6774 - acc: 0.5813 - val_loss: 0.6946 - val_acc: 0.5413
+
+Epoch 00007: val_acc did not improve from 0.58661
+Epoch 8/10
+
+  64/4566 [..............................] - ETA: 16:43 - loss: 0.6377 - acc: 0.6250
+ 128/4566 [..............................] - ETA: 16:18 - loss: 0.6533 - acc: 0.5859
+ 192/4566 [>.............................] - ETA: 14:58 - loss: 0.6610 - acc: 0.5729
+ 256/4566 [>.............................] - ETA: 13:00 - loss: 0.6599 - acc: 0.5938
+ 320/4566 [=>............................] - ETA: 11:38 - loss: 0.6589 - acc: 0.6062
+ 384/4566 [=>............................] - ETA: 10:41 - loss: 0.6640 - acc: 0.5964
+ 448/4566 [=>............................] - ETA: 9:56 - loss: 0.6685 - acc: 0.5848 
+ 512/4566 [==>...........................] - ETA: 9:29 - loss: 0.6683 - acc: 0.5840
+ 576/4566 [==>...........................] - ETA: 9:10 - loss: 0.6663 - acc: 0.5885
+ 640/4566 [===>..........................] - ETA: 8:50 - loss: 0.6696 - acc: 0.5828
+ 704/4566 [===>..........................] - ETA: 8:34 - loss: 0.6722 - acc: 0.5824
+ 768/4566 [====>.........................] - ETA: 8:20 - loss: 0.6699 - acc: 0.5859
+ 832/4566 [====>.........................] - ETA: 8:05 - loss: 0.6704 - acc: 0.5841
+ 896/4566 [====>.........................] - ETA: 7:49 - loss: 0.6721 - acc: 0.5826
+ 960/4566 [=====>........................] - ETA: 7:36 - loss: 0.6732 - acc: 0.5781
+1024/4566 [=====>........................] - ETA: 7:25 - loss: 0.6728 - acc: 0.5781
+1088/4566 [======>.......................] - ETA: 7:15 - loss: 0.6750 - acc: 0.5781
+1152/4566 [======>.......................] - ETA: 7:04 - loss: 0.6762 - acc: 0.5747
+1216/4566 [======>.......................] - ETA: 6:55 - loss: 0.6760 - acc: 0.5715
+1280/4566 [=======>......................] - ETA: 7:03 - loss: 0.6761 - acc: 0.5711
+1344/4566 [=======>......................] - ETA: 7:11 - loss: 0.6757 - acc: 0.5729
+1408/4566 [========>.....................] - ETA: 7:15 - loss: 0.6733 - acc: 0.5767
+1472/4566 [========>.....................] - ETA: 7:16 - loss: 0.6751 - acc: 0.5754
+1536/4566 [=========>....................] - ETA: 7:17 - loss: 0.6752 - acc: 0.5749
+1600/4566 [=========>....................] - ETA: 7:16 - loss: 0.6751 - acc: 0.5744
+1664/4566 [=========>....................] - ETA: 7:10 - loss: 0.6749 - acc: 0.5721
+1728/4566 [==========>...................] - ETA: 6:58 - loss: 0.6735 - acc: 0.5752
+1792/4566 [==========>...................] - ETA: 6:45 - loss: 0.6742 - acc: 0.5748
+1856/4566 [===========>..................] - ETA: 6:33 - loss: 0.6760 - acc: 0.5711
+1920/4566 [===========>..................] - ETA: 6:21 - loss: 0.6777 - acc: 0.5672
+1984/4566 [============>.................] - ETA: 6:09 - loss: 0.6772 - acc: 0.5685
+2048/4566 [============>.................] - ETA: 5:58 - loss: 0.6777 - acc: 0.5684
+2112/4566 [============>.................] - ETA: 5:47 - loss: 0.6785 - acc: 0.5687
+2176/4566 [=============>................] - ETA: 5:36 - loss: 0.6774 - acc: 0.5703
+2240/4566 [=============>................] - ETA: 5:25 - loss: 0.6782 - acc: 0.5710
+2304/4566 [==============>...............] - ETA: 5:14 - loss: 0.6782 - acc: 0.5707
+2368/4566 [==============>...............] - ETA: 5:04 - loss: 0.6781 - acc: 0.5709
+2432/4566 [==============>...............] - ETA: 4:53 - loss: 0.6784 - acc: 0.5715
+2496/4566 [===============>..............] - ETA: 4:43 - loss: 0.6786 - acc: 0.5713
+2560/4566 [===============>..............] - ETA: 4:33 - loss: 0.6789 - acc: 0.5703
+2624/4566 [================>.............] - ETA: 4:23 - loss: 0.6791 - acc: 0.5705
+2688/4566 [================>.............] - ETA: 4:17 - loss: 0.6792 - acc: 0.5696
+2752/4566 [=================>............] - ETA: 4:12 - loss: 0.6788 - acc: 0.5719
+2816/4566 [=================>............] - ETA: 4:06 - loss: 0.6786 - acc: 0.5717
+2880/4566 [=================>............] - ETA: 4:00 - loss: 0.6784 - acc: 0.5722
+2944/4566 [==================>...........] - ETA: 3:54 - loss: 0.6774 - acc: 0.5744
+3008/4566 [==================>...........] - ETA: 3:47 - loss: 0.6780 - acc: 0.5735
+3072/4566 [===================>..........] - ETA: 3:39 - loss: 0.6780 - acc: 0.5752
+3136/4566 [===================>..........] - ETA: 3:29 - loss: 0.6780 - acc: 0.5756
+3200/4566 [====================>.........] - ETA: 3:19 - loss: 0.6788 - acc: 0.5731
+3264/4566 [====================>.........] - ETA: 3:09 - loss: 0.6789 - acc: 0.5723
+3328/4566 [====================>.........] - ETA: 2:59 - loss: 0.6785 - acc: 0.5730
+3392/4566 [=====================>........] - ETA: 2:49 - loss: 0.6779 - acc: 0.5746
+3456/4566 [=====================>........] - ETA: 2:39 - loss: 0.6785 - acc: 0.5738
+3520/4566 [======================>.......] - ETA: 2:29 - loss: 0.6785 - acc: 0.5741
+3584/4566 [======================>.......] - ETA: 2:19 - loss: 0.6793 - acc: 0.5731
+3648/4566 [======================>.......] - ETA: 2:10 - loss: 0.6803 - acc: 0.5718
+3712/4566 [=======================>......] - ETA: 2:00 - loss: 0.6803 - acc: 0.5703
+3776/4566 [=======================>......] - ETA: 1:50 - loss: 0.6795 - acc: 0.5726
+3840/4566 [========================>.....] - ETA: 1:41 - loss: 0.6797 - acc: 0.5721
+3904/4566 [========================>.....] - ETA: 1:32 - loss: 0.6799 - acc: 0.5720
+3968/4566 [=========================>....] - ETA: 1:22 - loss: 0.6800 - acc: 0.5716
+4032/4566 [=========================>....] - ETA: 1:13 - loss: 0.6799 - acc: 0.5719
+4096/4566 [=========================>....] - ETA: 1:05 - loss: 0.6797 - acc: 0.5715
+4160/4566 [==========================>...] - ETA: 56s - loss: 0.6796 - acc: 0.5728 
+4224/4566 [==========================>...] - ETA: 48s - loss: 0.6791 - acc: 0.5748
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6791 - acc: 0.5751
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6802 - acc: 0.5738
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6802 - acc: 0.5745
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6797 - acc: 0.5757
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6792 - acc: 0.5759 
+4566/4566 [==============================] - 688s 151ms/step - loss: 0.6790 - acc: 0.5760 - val_loss: 0.6870 - val_acc: 0.5709
+
+Epoch 00008: val_acc did not improve from 0.58661
+Epoch 9/10
+
+  64/4566 [..............................] - ETA: 8:07 - loss: 0.6925 - acc: 0.5312
+ 128/4566 [..............................] - ETA: 8:04 - loss: 0.7005 - acc: 0.5703
+ 192/4566 [>.............................] - ETA: 7:54 - loss: 0.6812 - acc: 0.6042
+ 256/4566 [>.............................] - ETA: 7:45 - loss: 0.6785 - acc: 0.6211
+ 320/4566 [=>............................] - ETA: 7:37 - loss: 0.6864 - acc: 0.6062
+ 384/4566 [=>............................] - ETA: 7:20 - loss: 0.6860 - acc: 0.6016
+ 448/4566 [=>............................] - ETA: 7:09 - loss: 0.6781 - acc: 0.6116
+ 512/4566 [==>...........................] - ETA: 7:05 - loss: 0.6769 - acc: 0.6133
+ 576/4566 [==>...........................] - ETA: 7:05 - loss: 0.6804 - acc: 0.6042
+ 640/4566 [===>..........................] - ETA: 7:01 - loss: 0.6737 - acc: 0.6078
+ 704/4566 [===>..........................] - ETA: 6:54 - loss: 0.6740 - acc: 0.6051
+ 768/4566 [====>.........................] - ETA: 6:53 - loss: 0.6749 - acc: 0.6055
+ 832/4566 [====>.........................] - ETA: 7:13 - loss: 0.6782 - acc: 0.5998
+ 896/4566 [====>.........................] - ETA: 7:31 - loss: 0.6792 - acc: 0.5893
+ 960/4566 [=====>........................] - ETA: 7:47 - loss: 0.6740 - acc: 0.5990
+1024/4566 [=====>........................] - ETA: 8:03 - loss: 0.6759 - acc: 0.5928
+1088/4566 [======>.......................] - ETA: 8:13 - loss: 0.6722 - acc: 0.5965
+1152/4566 [======>.......................] - ETA: 8:20 - loss: 0.6739 - acc: 0.5946
+1216/4566 [======>.......................] - ETA: 8:27 - loss: 0.6766 - acc: 0.5896
+1280/4566 [=======>......................] - ETA: 8:11 - loss: 0.6766 - acc: 0.5891
+1344/4566 [=======>......................] - ETA: 7:54 - loss: 0.6790 - acc: 0.5818
+1408/4566 [========>.....................] - ETA: 7:38 - loss: 0.6798 - acc: 0.5817
+1472/4566 [========>.....................] - ETA: 7:22 - loss: 0.6800 - acc: 0.5802
+1536/4566 [=========>....................] - ETA: 7:06 - loss: 0.6764 - acc: 0.5879
+1600/4566 [=========>....................] - ETA: 6:51 - loss: 0.6742 - acc: 0.5931
+1664/4566 [=========>....................] - ETA: 6:39 - loss: 0.6738 - acc: 0.5925
+1728/4566 [==========>...................] - ETA: 6:28 - loss: 0.6743 - acc: 0.5903
+1792/4566 [==========>...................] - ETA: 6:17 - loss: 0.6731 - acc: 0.5926
+1856/4566 [===========>..................] - ETA: 6:07 - loss: 0.6727 - acc: 0.5921
+1920/4566 [===========>..................] - ETA: 5:56 - loss: 0.6736 - acc: 0.5922
+1984/4566 [============>.................] - ETA: 5:46 - loss: 0.6725 - acc: 0.5922
+2048/4566 [============>.................] - ETA: 5:37 - loss: 0.6733 - acc: 0.5908
+2112/4566 [============>.................] - ETA: 5:26 - loss: 0.6735 - acc: 0.5914
+2176/4566 [=============>................] - ETA: 5:18 - loss: 0.6728 - acc: 0.5924
+2240/4566 [=============>................] - ETA: 5:13 - loss: 0.6724 - acc: 0.5933
+2304/4566 [==============>...............] - ETA: 5:10 - loss: 0.6722 - acc: 0.5942
+2368/4566 [==============>...............] - ETA: 5:07 - loss: 0.6726 - acc: 0.5946
+2432/4566 [==============>...............] - ETA: 5:03 - loss: 0.6724 - acc: 0.5962
+2496/4566 [===============>..............] - ETA: 5:00 - loss: 0.6724 - acc: 0.5954
+2560/4566 [===============>..............] - ETA: 4:54 - loss: 0.6721 - acc: 0.5957
+2624/4566 [================>.............] - ETA: 4:47 - loss: 0.6720 - acc: 0.5941
+2688/4566 [================>.............] - ETA: 4:36 - loss: 0.6720 - acc: 0.5919
+2752/4566 [=================>............] - ETA: 4:25 - loss: 0.6709 - acc: 0.5938
+2816/4566 [=================>............] - ETA: 4:14 - loss: 0.6712 - acc: 0.5938
+2880/4566 [=================>............] - ETA: 4:03 - loss: 0.6714 - acc: 0.5938
+2944/4566 [==================>...........] - ETA: 3:53 - loss: 0.6718 - acc: 0.5917
+3008/4566 [==================>...........] - ETA: 3:43 - loss: 0.6709 - acc: 0.5934
+3072/4566 [===================>..........] - ETA: 3:33 - loss: 0.6709 - acc: 0.5934
+3136/4566 [===================>..........] - ETA: 3:22 - loss: 0.6706 - acc: 0.5947
+3200/4566 [====================>.........] - ETA: 3:12 - loss: 0.6702 - acc: 0.5944
+3264/4566 [====================>.........] - ETA: 3:03 - loss: 0.6705 - acc: 0.5947
+3328/4566 [====================>.........] - ETA: 2:53 - loss: 0.6708 - acc: 0.5941
+3392/4566 [=====================>........] - ETA: 2:43 - loss: 0.6716 - acc: 0.5929
+3456/4566 [=====================>........] - ETA: 2:34 - loss: 0.6719 - acc: 0.5926
+3520/4566 [======================>.......] - ETA: 2:24 - loss: 0.6731 - acc: 0.5909
+3584/4566 [======================>.......] - ETA: 2:15 - loss: 0.6722 - acc: 0.5921
+3648/4566 [======================>.......] - ETA: 2:05 - loss: 0.6716 - acc: 0.5940
+3712/4566 [=======================>......] - ETA: 1:57 - loss: 0.6721 - acc: 0.5929
+3776/4566 [=======================>......] - ETA: 1:50 - loss: 0.6722 - acc: 0.5922
+3840/4566 [========================>.....] - ETA: 1:42 - loss: 0.6722 - acc: 0.5914
+3904/4566 [========================>.....] - ETA: 1:33 - loss: 0.6717 - acc: 0.5922
+3968/4566 [=========================>....] - ETA: 1:25 - loss: 0.6717 - acc: 0.5920
+4032/4566 [=========================>....] - ETA: 1:16 - loss: 0.6722 - acc: 0.5915
+4096/4566 [=========================>....] - ETA: 1:08 - loss: 0.6719 - acc: 0.5920
+4160/4566 [==========================>...] - ETA: 58s - loss: 0.6721 - acc: 0.5921 
+4224/4566 [==========================>...] - ETA: 49s - loss: 0.6726 - acc: 0.5909
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6726 - acc: 0.5917
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6730 - acc: 0.5901
+4416/4566 [============================>.] - ETA: 21s - loss: 0.6731 - acc: 0.5897
+4480/4566 [============================>.] - ETA: 12s - loss: 0.6729 - acc: 0.5908
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6732 - acc: 0.5902 
+4566/4566 [==============================] - 669s 146ms/step - loss: 0.6736 - acc: 0.5889 - val_loss: 0.7007 - val_acc: 0.5256
+
+Epoch 00009: val_acc did not improve from 0.58661
+Epoch 10/10
+
+  64/4566 [..............................] - ETA: 8:30 - loss: 0.7082 - acc: 0.5156
+ 128/4566 [..............................] - ETA: 8:14 - loss: 0.6995 - acc: 0.5391
+ 192/4566 [>.............................] - ETA: 7:53 - loss: 0.6709 - acc: 0.5938
+ 256/4566 [>.............................] - ETA: 7:34 - loss: 0.6786 - acc: 0.5820
+ 320/4566 [=>............................] - ETA: 7:21 - loss: 0.6851 - acc: 0.5531
+ 384/4566 [=>............................] - ETA: 7:45 - loss: 0.6841 - acc: 0.5495
+ 448/4566 [=>............................] - ETA: 8:44 - loss: 0.6772 - acc: 0.5692
+ 512/4566 [==>...........................] - ETA: 9:32 - loss: 0.6805 - acc: 0.5742
+ 576/4566 [==>...........................] - ETA: 9:55 - loss: 0.6786 - acc: 0.5747
+ 640/4566 [===>..........................] - ETA: 10:09 - loss: 0.6783 - acc: 0.5781
+ 704/4566 [===>..........................] - ETA: 10:20 - loss: 0.6765 - acc: 0.5824
+ 768/4566 [====>.........................] - ETA: 10:27 - loss: 0.6780 - acc: 0.5794
+ 832/4566 [====>.........................] - ETA: 10:16 - loss: 0.6780 - acc: 0.5805
+ 896/4566 [====>.........................] - ETA: 9:52 - loss: 0.6786 - acc: 0.5781 
+ 960/4566 [=====>........................] - ETA: 9:28 - loss: 0.6771 - acc: 0.5823
+1024/4566 [=====>........................] - ETA: 9:05 - loss: 0.6759 - acc: 0.5811
+1088/4566 [======>.......................] - ETA: 8:44 - loss: 0.6769 - acc: 0.5800
+1152/4566 [======>.......................] - ETA: 8:25 - loss: 0.6763 - acc: 0.5816
+1216/4566 [======>.......................] - ETA: 8:10 - loss: 0.6770 - acc: 0.5798
+1280/4566 [=======>......................] - ETA: 7:52 - loss: 0.6761 - acc: 0.5805
+1344/4566 [=======>......................] - ETA: 7:39 - loss: 0.6767 - acc: 0.5811
+1408/4566 [========>.....................] - ETA: 7:24 - loss: 0.6752 - acc: 0.5831
+1472/4566 [========>.....................] - ETA: 7:09 - loss: 0.6752 - acc: 0.5822
+1536/4566 [=========>....................] - ETA: 6:55 - loss: 0.6733 - acc: 0.5866
+1600/4566 [=========>....................] - ETA: 6:42 - loss: 0.6708 - acc: 0.5919
+1664/4566 [=========>....................] - ETA: 6:30 - loss: 0.6717 - acc: 0.5919
+1728/4566 [==========>...................] - ETA: 6:18 - loss: 0.6707 - acc: 0.5949
+1792/4566 [==========>...................] - ETA: 6:09 - loss: 0.6699 - acc: 0.5949
+1856/4566 [===========>..................] - ETA: 6:02 - loss: 0.6702 - acc: 0.5943
+1920/4566 [===========>..................] - ETA: 6:01 - loss: 0.6710 - acc: 0.5932
+1984/4566 [============>.................] - ETA: 6:00 - loss: 0.6724 - acc: 0.5882
+2048/4566 [============>.................] - ETA: 5:56 - loss: 0.6719 - acc: 0.5879
+2112/4566 [============>.................] - ETA: 5:52 - loss: 0.6731 - acc: 0.5862
+2176/4566 [=============>................] - ETA: 5:48 - loss: 0.6722 - acc: 0.5869
+2240/4566 [=============>................] - ETA: 5:43 - loss: 0.6719 - acc: 0.5866
+2304/4566 [==============>...............] - ETA: 5:37 - loss: 0.6725 - acc: 0.5838
+2368/4566 [==============>...............] - ETA: 5:27 - loss: 0.6731 - acc: 0.5840
+2432/4566 [==============>...............] - ETA: 5:15 - loss: 0.6739 - acc: 0.5818
+2496/4566 [===============>..............] - ETA: 5:03 - loss: 0.6731 - acc: 0.5845
+2560/4566 [===============>..............] - ETA: 4:51 - loss: 0.6734 - acc: 0.5848
+2624/4566 [================>.............] - ETA: 4:39 - loss: 0.6732 - acc: 0.5854
+2688/4566 [================>.............] - ETA: 4:28 - loss: 0.6726 - acc: 0.5856
+2752/4566 [=================>............] - ETA: 4:17 - loss: 0.6724 - acc: 0.5858
+2816/4566 [=================>............] - ETA: 4:07 - loss: 0.6716 - acc: 0.5874
+2880/4566 [=================>............] - ETA: 3:56 - loss: 0.6711 - acc: 0.5896
+2944/4566 [==================>...........] - ETA: 3:47 - loss: 0.6710 - acc: 0.5900
+3008/4566 [==================>...........] - ETA: 3:36 - loss: 0.6705 - acc: 0.5914
+3072/4566 [===================>..........] - ETA: 3:27 - loss: 0.6712 - acc: 0.5892
+3136/4566 [===================>..........] - ETA: 3:17 - loss: 0.6701 - acc: 0.5899
+3200/4566 [====================>.........] - ETA: 3:07 - loss: 0.6697 - acc: 0.5903
+3264/4566 [====================>.........] - ETA: 2:57 - loss: 0.6698 - acc: 0.5898
+3328/4566 [====================>.........] - ETA: 2:48 - loss: 0.6697 - acc: 0.5907
+3392/4566 [=====================>........] - ETA: 2:40 - loss: 0.6700 - acc: 0.5902
+3456/4566 [=====================>........] - ETA: 2:33 - loss: 0.6711 - acc: 0.5888
+3520/4566 [======================>.......] - ETA: 2:25 - loss: 0.6707 - acc: 0.5898
+3584/4566 [======================>.......] - ETA: 2:18 - loss: 0.6707 - acc: 0.5901
+3648/4566 [======================>.......] - ETA: 2:10 - loss: 0.6703 - acc: 0.5910
+3712/4566 [=======================>......] - ETA: 2:02 - loss: 0.6701 - acc: 0.5921
+3776/4566 [=======================>......] - ETA: 1:54 - loss: 0.6714 - acc: 0.5906
+3840/4566 [========================>.....] - ETA: 1:45 - loss: 0.6713 - acc: 0.5911
+3904/4566 [========================>.....] - ETA: 1:35 - loss: 0.6713 - acc: 0.5920
+3968/4566 [=========================>....] - ETA: 1:25 - loss: 0.6712 - acc: 0.5922
+4032/4566 [=========================>....] - ETA: 1:16 - loss: 0.6716 - acc: 0.5920
+4096/4566 [=========================>....] - ETA: 1:06 - loss: 0.6720 - acc: 0.5913
+4160/4566 [==========================>...] - ETA: 57s - loss: 0.6726 - acc: 0.5909 
+4224/4566 [==========================>...] - ETA: 48s - loss: 0.6726 - acc: 0.5907
+4288/4566 [===========================>..] - ETA: 39s - loss: 0.6725 - acc: 0.5907
+4352/4566 [===========================>..] - ETA: 30s - loss: 0.6723 - acc: 0.5903
+4416/4566 [============================>.] - ETA: 20s - loss: 0.6717 - acc: 0.5917
+4480/4566 [============================>.] - ETA: 11s - loss: 0.6728 - acc: 0.5902
+4544/4566 [============================>.] - ETA: 3s - loss: 0.6732 - acc: 0.5887 
+4566/4566 [==============================] - 655s 143ms/step - loss: 0.6731 - acc: 0.5887 - val_loss: 0.6854 - val_acc: 0.5807
+
+Epoch 00010: val_acc did not improve from 0.58661
+样本个数 634
+样本个数 1268
+WARNING:tensorflow:Entity <bound method TokenEmbedding.call of <keras_bert.layers.embedding.TokenEmbedding object at 0x7ff45097f210>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method TokenEmbedding.call of <keras_bert.layers.embedding.TokenEmbedding object at 0x7ff45097f210>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method PositionEmbedding.call of <keras_pos_embd.pos_embd.PositionEmbedding object at 0x7ff4508d1150>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method PositionEmbedding.call of <keras_pos_embd.pos_embd.PositionEmbedding object at 0x7ff4508d1150>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff44850b810>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff44850b810>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff448516810>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff448516810>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4484e6850>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4484e6850>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4483ca150>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4483ca150>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff448516710>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff448516710>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff448372c10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff448372c10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4041c4810>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4041c4810>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4483fdc90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4483fdc90>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f2875bd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3f2875bd0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4041c44d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4041c44d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff44834e090>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff44834e090>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff44804d190>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff44804d190>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff447ff3190>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff447ff3190>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff448008e50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff448008e50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff44804d5d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff44804d5d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437e82a10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437e82a10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff437d37bd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff437d37bd0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437efa4d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437efa4d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d93af210>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3d93af210>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff437d37210>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff437d37210>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c01ff190>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff3c01ff190>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff437c01090>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff437c01090>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff43791ff10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff43791ff10>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437937e90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437937e90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff437a03b10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff437a03b10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437937e50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437937e50>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4376c2310>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4376c2310>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4378d1ed0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4378d1ed0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff43747a910>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff43747a910>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4376c2ed0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4376c2ed0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437798f10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437798f10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff43757a350>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff43757a350>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437354e50>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437354e50>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff43737e690>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff43737e690>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff43757a050>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff43757a050>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4371eed90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4371eed90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4376f3810>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4376f3810>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437272dd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff437272dd0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437157bd0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff437157bd0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4371a1e90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff4371a1e90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ef3f890>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ef3f890>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff42ef804d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff42ef804d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42ef88410>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42ef88410>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4370bd0d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff4370bd0d0>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ef80790>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ef80790>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ec29390>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ec29390>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff42ec9a510>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff42ec9a510>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42e94c6d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42e94c6d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e9ce590>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e9ce590>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ec9a590>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ec9a590>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ea31f10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42ea31f10>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4266f60d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4266f60d0>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4266cfd90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff4266cfd90>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e9db310>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e9db310>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ea82590>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42ea82590>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e85fa90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42e85fa90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4263b8c10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiHeadAttention.call of <keras_multi_head.multi_head_attention.MultiHeadAttention object at 0x7ff4263b8c10>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42643b150>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method ScaledDotProductAttention.call of <keras_self_attention.scaled_dot_attention.ScaledDotProductAttention object at 0x7ff42643b150>>: AttributeError: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff426726550>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff426726550>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42649ef90>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method FeedForward.call of <keras_position_wise_feed_forward.feed_forward.FeedForward object at 0x7ff42649ef90>>: AttributeError: module 'gast' has no attribute 'Str'
+WARNING:tensorflow:Entity <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42637c250>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LayerNormalization.call of <keras_layer_normalization.layer_normalization.LayerNormalization object at 0x7ff42637c250>>: AttributeError: module 'gast' has no attribute 'Str'
+window13.py:145: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=[<tf.Tenso..., outputs=[<tf.Tenso...)`
+  model = Model(input=[inputs_seq1], output=[seq_dense])
+
+  64/1268 [>.............................] - ETA: 2:21
+ 128/1268 [==>...........................] - ETA: 1:33
+ 192/1268 [===>..........................] - ETA: 1:16
+ 256/1268 [=====>........................] - ETA: 1:07
+ 320/1268 [======>.......................] - ETA: 59s 
+ 384/1268 [========>.....................] - ETA: 52s
+ 448/1268 [=========>....................] - ETA: 46s
+ 512/1268 [===========>..................] - ETA: 41s
+ 576/1268 [============>.................] - ETA: 37s
+ 640/1268 [==============>...............] - ETA: 34s
+ 704/1268 [===============>..............] - ETA: 30s
+ 768/1268 [=================>............] - ETA: 26s
+ 832/1268 [==================>...........] - ETA: 23s
+ 896/1268 [====================>.........] - ETA: 19s
+ 960/1268 [=====================>........] - ETA: 16s
+1024/1268 [=======================>......] - ETA: 12s
+1088/1268 [========================>.....] - ETA: 9s 
+1152/1268 [==========================>...] - ETA: 6s
+1216/1268 [===========================>..] - ETA: 2s
+1268/1268 [==============================] - 66s 52ms/step
+loss: 0.6783894738564356
+acc: 0.5835962133828774
