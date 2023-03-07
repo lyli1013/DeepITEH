@@ -1,0 +1,6 @@
+
+The Acc of the first layer model on the test set is: 0.6077844311377245
+The Sn of the first layer model on the test set is: 0.2215568862275449
+The Sp of the first layer model on the test set is: 0.9940119760479041
+The MCC of the first layer model on the test set is: 0.16191922245696505
+The AUC of the first layer model on the test set is: 0.7060848363153932
