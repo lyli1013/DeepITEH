@@ -1,0 +1,189 @@
+nohup: ignoring input
+Using TensorFlow backend.
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:66: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:148: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3733: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+drop_2格式
+(?, 128)
+(?, 4)
+omics_dense4格式
+02model_train.py:84: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=[<tf.Tenso..., outputs=[<tf.Tenso...)`
+  model = Model(input=[inputs_seq1, inputs_omics], output=[pred_output])
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/optimizers.py:793: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3657: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/lyli/miniconda3/envs/SeqPose/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Fitting first model...
+Epoch 1/4
+2022-12-07 17:57:48.966981: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2022-12-07 17:57:49.041179: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2022-12-07 17:57:49.098942: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563005839560 executing computations on platform Host. Devices:
+2022-12-07 17:57:49.099086: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2022-12-07 17:57:50.111749: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+
+  64/1956 [..............................] - ETA: 4:03 - loss: 0.7245 - acc: 0.4688
+ 128/1956 [>.............................] - ETA: 2:47 - loss: 0.7292 - acc: 0.4141
+ 192/1956 [=>............................] - ETA: 2:20 - loss: 0.7418 - acc: 0.4167
+ 256/1956 [==>...........................] - ETA: 2:08 - loss: 0.7512 - acc: 0.4141
+ 320/1956 [===>..........................] - ETA: 2:05 - loss: 0.7369 - acc: 0.4250
+ 384/1956 [====>.........................] - ETA: 1:58 - loss: 0.7350 - acc: 0.4062
+ 448/1956 [=====>........................] - ETA: 1:57 - loss: 0.7286 - acc: 0.4286
+ 512/1956 [======>.......................] - ETA: 1:58 - loss: 0.7420 - acc: 0.4395
+ 576/1956 [=======>......................] - ETA: 2:05 - loss: 0.7334 - acc: 0.4653
+ 640/1956 [========>.....................] - ETA: 2:05 - loss: 0.7369 - acc: 0.4594
+ 704/1956 [=========>....................] - ETA: 2:06 - loss: 0.7406 - acc: 0.4645
+ 768/1956 [==========>...................] - ETA: 2:02 - loss: 0.7428 - acc: 0.4635
+ 832/1956 [===========>..................] - ETA: 1:53 - loss: 0.7382 - acc: 0.4736
+ 896/1956 [============>.................] - ETA: 1:52 - loss: 0.7366 - acc: 0.4866
+ 960/1956 [=============>................] - ETA: 1:50 - loss: 0.7384 - acc: 0.4802
+1024/1956 [==============>...............] - ETA: 1:42 - loss: 0.7309 - acc: 0.4951
+1088/1956 [===============>..............] - ETA: 1:33 - loss: 0.7264 - acc: 0.5074
+1152/1956 [================>.............] - ETA: 1:24 - loss: 0.7261 - acc: 0.5122
+1216/1956 [=================>............] - ETA: 1:16 - loss: 0.7215 - acc: 0.5181
+1280/1956 [==================>...........] - ETA: 1:10 - loss: 0.7180 - acc: 0.5211
+1344/1956 [===================>..........] - ETA: 1:04 - loss: 0.7144 - acc: 0.5260
+1408/1956 [====================>.........] - ETA: 57s - loss: 0.7119 - acc: 0.5270 
+1472/1956 [=====================>........] - ETA: 50s - loss: 0.7133 - acc: 0.5279
+1536/1956 [======================>.......] - ETA: 43s - loss: 0.7117 - acc: 0.5312
+1600/1956 [=======================>......] - ETA: 36s - loss: 0.7098 - acc: 0.5356
+1664/1956 [========================>.....] - ETA: 29s - loss: 0.7066 - acc: 0.5385
+1728/1956 [=========================>....] - ETA: 22s - loss: 0.7028 - acc: 0.5457
+1792/1956 [==========================>...] - ETA: 16s - loss: 0.6994 - acc: 0.5513
+1856/1956 [===========================>..] - ETA: 9s - loss: 0.6995 - acc: 0.5533 
+1920/1956 [============================>.] - ETA: 3s - loss: 0.6983 - acc: 0.5573
+1956/1956 [==============================] - 187s 96ms/step - loss: 0.6975 - acc: 0.5583
+Epoch 2/4
+
+  64/1956 [..............................] - ETA: 2:15 - loss: 0.6765 - acc: 0.6562
+ 128/1956 [>.............................] - ETA: 1:57 - loss: 0.6431 - acc: 0.6797
+ 192/1956 [=>............................] - ETA: 1:53 - loss: 0.6589 - acc: 0.6875
+ 256/1956 [==>...........................] - ETA: 1:50 - loss: 0.6444 - acc: 0.7109
+ 320/1956 [===>..........................] - ETA: 1:49 - loss: 0.6340 - acc: 0.7094
+ 384/1956 [====>.........................] - ETA: 1:45 - loss: 0.6361 - acc: 0.7031
+ 448/1956 [=====>........................] - ETA: 1:40 - loss: 0.6363 - acc: 0.6942
+ 512/1956 [======>.......................] - ETA: 1:37 - loss: 0.6347 - acc: 0.6855
+ 576/1956 [=======>......................] - ETA: 1:32 - loss: 0.6306 - acc: 0.6892
+ 640/1956 [========>.....................] - ETA: 1:27 - loss: 0.6358 - acc: 0.6828
+ 704/1956 [=========>....................] - ETA: 1:22 - loss: 0.6333 - acc: 0.6804
+ 768/1956 [==========>...................] - ETA: 1:17 - loss: 0.6306 - acc: 0.6810
+ 832/1956 [===========>..................] - ETA: 1:13 - loss: 0.6321 - acc: 0.6827
+ 896/1956 [============>.................] - ETA: 1:08 - loss: 0.6300 - acc: 0.6819
+ 960/1956 [=============>................] - ETA: 1:03 - loss: 0.6287 - acc: 0.6844
+1024/1956 [==============>...............] - ETA: 59s - loss: 0.6269 - acc: 0.6836 
+1088/1956 [===============>..............] - ETA: 55s - loss: 0.6284 - acc: 0.6857
+1152/1956 [================>.............] - ETA: 50s - loss: 0.6285 - acc: 0.6875
+1216/1956 [=================>............] - ETA: 46s - loss: 0.6268 - acc: 0.6883
+1280/1956 [==================>...........] - ETA: 42s - loss: 0.6232 - acc: 0.6914
+1344/1956 [===================>..........] - ETA: 38s - loss: 0.6202 - acc: 0.6972
+1408/1956 [====================>.........] - ETA: 34s - loss: 0.6170 - acc: 0.7045
+1472/1956 [=====================>........] - ETA: 30s - loss: 0.6143 - acc: 0.7079
+1536/1956 [======================>.......] - ETA: 26s - loss: 0.6138 - acc: 0.7083
+1600/1956 [=======================>......] - ETA: 22s - loss: 0.6118 - acc: 0.7125
+1664/1956 [========================>.....] - ETA: 18s - loss: 0.6129 - acc: 0.7109
+1728/1956 [=========================>....] - ETA: 14s - loss: 0.6123 - acc: 0.7141
+1792/1956 [==========================>...] - ETA: 10s - loss: 0.6131 - acc: 0.7121
+1856/1956 [===========================>..] - ETA: 6s - loss: 0.6135 - acc: 0.7117 
+1920/1956 [============================>.] - ETA: 2s - loss: 0.6122 - acc: 0.7083
+1956/1956 [==============================] - 122s 62ms/step - loss: 0.6135 - acc: 0.7060
+Epoch 3/4
+
+  64/1956 [..............................] - ETA: 1:57 - loss: 0.5981 - acc: 0.7031
+ 128/1956 [>.............................] - ETA: 1:54 - loss: 0.6170 - acc: 0.6719
+ 192/1956 [=>............................] - ETA: 1:45 - loss: 0.5903 - acc: 0.7292
+ 256/1956 [==>...........................] - ETA: 1:43 - loss: 0.5769 - acc: 0.7344
+ 320/1956 [===>..........................] - ETA: 1:42 - loss: 0.5821 - acc: 0.7312
+ 384/1956 [====>.........................] - ETA: 1:39 - loss: 0.5740 - acc: 0.7318
+ 448/1956 [=====>........................] - ETA: 1:35 - loss: 0.5770 - acc: 0.7188
+ 512/1956 [======>.......................] - ETA: 1:32 - loss: 0.5749 - acc: 0.7188
+ 576/1956 [=======>......................] - ETA: 1:28 - loss: 0.5717 - acc: 0.7240
+ 640/1956 [========>.....................] - ETA: 1:24 - loss: 0.5689 - acc: 0.7297
+ 704/1956 [=========>....................] - ETA: 1:20 - loss: 0.5691 - acc: 0.7244
+ 768/1956 [==========>...................] - ETA: 1:16 - loss: 0.5741 - acc: 0.7174
+ 832/1956 [===========>..................] - ETA: 1:11 - loss: 0.5717 - acc: 0.7091
+ 896/1956 [============>.................] - ETA: 1:08 - loss: 0.5725 - acc: 0.7121
+ 960/1956 [=============>................] - ETA: 1:03 - loss: 0.5723 - acc: 0.7125
+1024/1956 [==============>...............] - ETA: 59s - loss: 0.5706 - acc: 0.7158 
+1088/1956 [===============>..............] - ETA: 55s - loss: 0.5700 - acc: 0.7132
+1152/1956 [================>.............] - ETA: 50s - loss: 0.5656 - acc: 0.7161
+1216/1956 [=================>............] - ETA: 46s - loss: 0.5640 - acc: 0.7196
+1280/1956 [==================>...........] - ETA: 42s - loss: 0.5643 - acc: 0.7219
+1344/1956 [===================>..........] - ETA: 38s - loss: 0.5632 - acc: 0.7232
+1408/1956 [====================>.........] - ETA: 34s - loss: 0.5631 - acc: 0.7216
+1472/1956 [=====================>........] - ETA: 30s - loss: 0.5645 - acc: 0.7174
+1536/1956 [======================>.......] - ETA: 26s - loss: 0.5620 - acc: 0.7181
+1600/1956 [=======================>......] - ETA: 22s - loss: 0.5623 - acc: 0.7131
+1664/1956 [========================>.....] - ETA: 18s - loss: 0.5590 - acc: 0.7157
+1728/1956 [=========================>....] - ETA: 14s - loss: 0.5586 - acc: 0.7159
+1792/1956 [==========================>...] - ETA: 10s - loss: 0.5577 - acc: 0.7165
+1856/1956 [===========================>..] - ETA: 6s - loss: 0.5564 - acc: 0.7171 
+1920/1956 [============================>.] - ETA: 2s - loss: 0.5551 - acc: 0.7177
+1956/1956 [==============================] - 123s 63ms/step - loss: 0.5547 - acc: 0.7173
+Epoch 4/4
+
+  64/1956 [..............................] - ETA: 1:40 - loss: 0.5171 - acc: 0.8281
+ 128/1956 [>.............................] - ETA: 1:43 - loss: 0.5451 - acc: 0.7969
+ 192/1956 [=>............................] - ETA: 1:35 - loss: 0.5418 - acc: 0.7656
+ 256/1956 [==>...........................] - ETA: 1:31 - loss: 0.5486 - acc: 0.7305
+ 320/1956 [===>..........................] - ETA: 1:28 - loss: 0.5375 - acc: 0.7375
+ 384/1956 [====>.........................] - ETA: 1:26 - loss: 0.5452 - acc: 0.7318
+ 448/1956 [=====>........................] - ETA: 1:21 - loss: 0.5363 - acc: 0.7411
+ 512/1956 [======>.......................] - ETA: 1:21 - loss: 0.5335 - acc: 0.7383
+ 576/1956 [=======>......................] - ETA: 1:19 - loss: 0.5337 - acc: 0.7378
+ 640/1956 [========>.....................] - ETA: 1:15 - loss: 0.5364 - acc: 0.7266
+ 704/1956 [=========>....................] - ETA: 1:10 - loss: 0.5346 - acc: 0.7230
+ 768/1956 [==========>...................] - ETA: 1:08 - loss: 0.5298 - acc: 0.7188
+ 832/1956 [===========>..................] - ETA: 1:04 - loss: 0.5282 - acc: 0.7151
+ 896/1956 [============>.................] - ETA: 1:01 - loss: 0.5287 - acc: 0.7176
+ 960/1956 [=============>................] - ETA: 57s - loss: 0.5317 - acc: 0.7177 
+1024/1956 [==============>...............] - ETA: 54s - loss: 0.5319 - acc: 0.7168
+1088/1956 [===============>..............] - ETA: 50s - loss: 0.5320 - acc: 0.7142
+1152/1956 [================>.............] - ETA: 46s - loss: 0.5308 - acc: 0.7153
+1216/1956 [=================>............] - ETA: 43s - loss: 0.5328 - acc: 0.7122
+1280/1956 [==================>...........] - ETA: 39s - loss: 0.5320 - acc: 0.7117
+1344/1956 [===================>..........] - ETA: 35s - loss: 0.5337 - acc: 0.7083
+1408/1956 [====================>.........] - ETA: 31s - loss: 0.5317 - acc: 0.7088
+1472/1956 [=====================>........] - ETA: 28s - loss: 0.5303 - acc: 0.7147
+1536/1956 [======================>.......] - ETA: 24s - loss: 0.5310 - acc: 0.7109
+1600/1956 [=======================>......] - ETA: 20s - loss: 0.5327 - acc: 0.7087
+1664/1956 [========================>.....] - ETA: 17s - loss: 0.5342 - acc: 0.7115
+1728/1956 [=========================>....] - ETA: 13s - loss: 0.5357 - acc: 0.7106
+1792/1956 [==========================>...] - ETA: 9s - loss: 0.5352 - acc: 0.7087 
+1856/1956 [===========================>..] - ETA: 5s - loss: 0.5355 - acc: 0.7091
+1920/1956 [============================>.] - ETA: 2s - loss: 0.5358 - acc: 0.7104
+1956/1956 [==============================] - 118s 60ms/step - loss: 0.5355 - acc: 0.7106
+Saved model to disk
