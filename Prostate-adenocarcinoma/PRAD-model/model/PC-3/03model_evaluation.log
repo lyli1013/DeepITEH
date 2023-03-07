@@ -1,0 +1,14 @@
+# 没更换测试集时的
+The Acc of the first layer model on the test set is: 0.6994818652849741
+The Sn of the first layer model on the test set is: 0.39896373056994816
+The Sp of the first layer model on the test set is: 1.0
+The MCC of the first layer model on the test set is: 0.31530643262183145
+The AUC of the first layer model on the test set is: 0.7379795430749818
+nohup: ignoring input
+
+# 更换测试集时的
+The Acc of the first layer model on the test set is: 0.6865284974093264
+The Sn of the first layer model on the test set is: 0.39896373056994816
+The Sp of the first layer model on the test set is: 0.9740932642487047
+The MCC of the first layer model on the test set is: 0.29724670567728206
+The AUC of the first layer model on the test set is: 0.7263550699347632
